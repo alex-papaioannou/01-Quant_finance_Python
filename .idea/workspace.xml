@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2424843d-c3c1-489b-97a5-65a93eb44b0e" name="Changes" comment="Merge remote-tracking branch 'origin/master' into new_projects">
-      <change afterPath="$PROJECT_DIR$/.idea/01-Quant_finance_Python.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Greeks and Euro options pricing/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kalman filter stock prediction/images/fig.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/01-Quant_finance_Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/01-Quant_finance_Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Greeks and Euro options pricing/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Greeks and Euro options pricing/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monte Carlo techniques/Dice Expected Value/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo techniques/Dice Expected Value/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monte Carlo techniques/Integral Estimation/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo techniques/Integral Estimation/Dockerfile" afterDir="false" />
     </list>
-    <option name="SHOW_DIALOG" value="false" />
+    <option name="SHOW_DIALOG" value="true" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="true" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager">
@@ -38,26 +38,29 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LHgup7CQI6pf299YD9UWKBeNsE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/alexpapaioannou/dev/scripts/01-Quant_finance_Python",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alexpapaioannou/dev/scripts/01-Quant_finance_Python&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings is-module-sdk="true">
@@ -70,8 +73,15 @@
       <recent name="$PROJECT_DIR$/Monte Carlo techniques/Integral Estimation/venv" />
       <recent name="$PROJECT_DIR$/Monte Carlo techniques/Dice Expected Value/venv" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Monte Carlo techniques/Integral Estimation" />
+      <recent name="$PROJECT_DIR$/Monte Carlo techniques/Dice Expected Value" />
+      <recent name="$PROJECT_DIR$/Greeks and Euro options pricing" />
+      <recent name="$PROJECT_DIR$/idea" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-mc-integral">
+  <component name="RunManager" selected="Docker.kalman">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="01-Quant_finance_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,29 +104,51 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="docker-mc-integral" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+    <configuration name="Dice Expected Value/Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
           <option name="imageTag" value="python:latest" />
           <option name="containerName" value="quant-finance" />
-          <option name="sourceFilePath" value="Monte Carlo techniques/Integral Estimation/venv/Dockerfile" />
+          <option name="sourceFilePath" value="Monte Carlo techniques/Dice Expected Value/Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker_dice" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+    <configuration name="greeks" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
           <option name="imageTag" value="python:latest" />
-          <option name="containerName" value="" />
-          <option name="sourceFilePath" value="Monte Carlo techniques/Dice Expected Value/venv/Dockerfile" />
+          <option name="containerName" value="quant-finance" />
+          <option name="sourceFilePath" value="Greeks and Euro options pricing/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="integral-estimation" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="python:latest" />
+          <option name="containerName" value="quant-finance" />
+          <option name="sourceFilePath" value="Monte Carlo techniques/Integral Estimation/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="kalman" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="python:latest" />
+          <option name="containerName" value="quant-finance" />
+          <option name="sourceFilePath" value="Kalman filter stock prediction/Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-mc-integral" />
-      <item itemvalue="Docker.docker_dice" />
+      <item itemvalue="Docker.integral-estimation" />
+      <item itemvalue="Docker.kalman" />
+      <item itemvalue="Docker.greeks" />
+      <item itemvalue="Docker.Dice Expected Value/Dockerfile: Compose Deployment" />
       <item itemvalue="Python.main" />
     </list>
   </component>
@@ -127,7 +159,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2424843d-c3c1-489b-97a5-65a93eb44b0e" name="Changes" comment="" />
-      <changelist id="" name="New changelist" comment="" />
       <created>1675533648632</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -136,7 +167,12 @@
       <workItem from="1675572238873" duration="3501000" />
       <workItem from="1675576050445" duration="748000" />
       <workItem from="1675576875596" duration="1317000" />
-      <workItem from="1675578207908" duration="2213000" />
+      <workItem from="1675578207908" duration="5927000" />
+      <workItem from="1675632512097" duration="789000" />
+      <workItem from="1675637731378" duration="301000" />
+      <workItem from="1675638078844" duration="1034000" />
+      <workItem from="1675640802180" duration="2571000" />
+      <workItem from="1675646370260" duration="4007000" />
     </task>
     <task id="LOCAL-00001" summary="adding 3 new containerized projects to Git">
       <created>1675575408556</created>
@@ -159,11 +195,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675575936746</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge remote-tracking branch 'origin/master' into new_projects">
+      <created>1675582433324</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675582433324</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -183,6 +229,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
@@ -192,6 +239,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master' into new_projects" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/01_Quant_finance_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1675650613377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Kalman filter stock prediction" />
     <SUITE FILE_PATH="coverage/01__Quant_finance__Python_$main.coverage" NAME="main Coverage Results" MODIFIED="1675572919321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/01__Quant_finance__Python_$dice_expected_value.coverage" NAME="dice_expected_value Coverage Results" MODIFIED="1675572942674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Monte Carlo techniques/Dice Expected Value/venv" />
   </component>

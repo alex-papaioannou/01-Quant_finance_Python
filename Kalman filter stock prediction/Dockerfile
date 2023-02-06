@@ -31,10 +31,11 @@ ADD . /app
 WORKDIR /app
 
 # Install dependencies:
+COPY images/ /app
 COPY requirements.txt /app/requirements.txt
 RUN pip install --upgrade pip
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Run the application:
-COPY dice_expected_value.py /app
-CMD [ "python", "dice_expected_value.py"]
+COPY main.py /app
+CMD [ "python", "main.py"]
